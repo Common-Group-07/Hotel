@@ -1,0 +1,28 @@
+HashSet:
+-----------
+•	HashSet is a Set based collection.
+•	Its default capacity is 16.
+•	It stores only unique elements.
+•	It allows one null value.
+•	It stores elements in Hashtable
+•	It uses hashing mechanism to store elements.
+•	It does not guarantee order of the elements.
+•	It has constant time performance for operations such as add, remove, contains & size.
+•	It uses equals() method to compare elements and detect duplicates.
+•	It can be iterated using iterator and enhanced for loop.
+•	Its default load factor is 0.75 and permitted range is 0 - 1.0
+•	It is non-synchronized, hence does not guarantee data consistency in thread environment.
+•	It is best for search operation.
+
+HashTable uses hashing concept to store data in memory. The hashing process will generate a memory friendly hash code using the element. The data will be stored along with the hash code so that the data can be searched easily. The hashing concept ensures that the time taken to perform basic operations like insertion, delete, update and search is constant for large and small set also.
+
+The drawback of hashing concept is that it doesn’t guarantee the order of elements. It may store the elements in random order.
+
+HashSet stores unique elements because it based on SetInterface.
+
+How we can create HashSet
+
+         HashSet h1=new HashSet();   //16
+         HashSet h1=new HashSet(int capacity);
+         HashSet h1=new HashSet(int capacity, float FillRatio);=>default value for fill ratio is 0.75
+         HashSet h1=new HashSet(Collection obj);
